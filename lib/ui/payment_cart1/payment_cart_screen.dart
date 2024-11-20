@@ -81,7 +81,7 @@ class _PaymentCartScreen1State extends State<PaymentCartScreen1> {
                                 buildProductTotal(cart),
                                 paymentNow(snapshot, cart),
                                 SizedBox(height: 20),
-                                paymentZaloPay(snapshot, cart),
+                                // paymentZaloPay(snapshot, cart),
                                 SizedBox(height: 20),
                               ],
                             )),

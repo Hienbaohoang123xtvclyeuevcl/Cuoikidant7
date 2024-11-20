@@ -150,7 +150,7 @@ class _AuthCardState extends State<AuthCard> {
           color: Theme.of(context).primaryTextTheme.titleLarge?.color,
         ),
       ),
-      child: Text(_authMode == AuthMode.login ? 'Đăng Nhập' : 'Đăng Ký'),
+      child: Text(_authMode == AuthMode.login ? 'Đăng Nhập' : 'Đăng Ký', style: TextStyle(color: Colors.black),),
     );
   }
 

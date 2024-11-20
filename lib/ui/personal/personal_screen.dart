@@ -116,7 +116,10 @@ class _PersonalScreenState extends State<PersonalScreen> {
           color: Theme.of(context).primaryTextTheme.titleLarge?.color,
         ),
       ),
-      child: Text('Lưu thay đổi'),
+      child: Text(
+        'Lưu thay đổi',
+        style: TextStyle(color: Colors.black),
+      ),
     );
   }
 

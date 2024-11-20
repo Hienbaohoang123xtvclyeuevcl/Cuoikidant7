@@ -44,7 +44,7 @@ class AuthService {
         final token = authToken.token;
         final uid = authToken.userId;
         final usersUrl = Uri.parse(
-            'https://shopcaycanh-8b3ff-default-rtdb.firebaseio.com//users.json?auth=$token');
+            'https://shopbancay-default-rtdb.firebaseio.com/users.json?auth=$token');
         final response = await http.post(usersUrl,
             body: json.encode({
               'uid': uid,
@@ -81,7 +81,7 @@ class AuthService {
     final token = authToken.token;
     final uid = authToken.userId;
     final usersUrl = Uri.parse(
-        'https://shopcaycanh-8b3ff-default-rtdb.firebaseio.com/users.json?auth=$token&orderBy="uid"&equalTo="$uid"');
+        'https://shopbancay-default-rtdb.firebaseio.com/users.json?auth=$token&orderBy="uid"&equalTo="$uid"');
 
     final response = await http.get(usersUrl);
     final user = json.decode(response.body) as Map<String, dynamic>;

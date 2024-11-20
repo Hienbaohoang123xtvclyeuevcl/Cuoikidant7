@@ -34,15 +34,15 @@ class FilterOrderAdminManager with ChangeNotifier {
   Future<List<OrderItem>> fetchOrders() async {
     _orders1 = await _orderService.fetchOrders(3);
     var quater = 4;
-    var year = 2023;
-      final startMonth = (quater - 1) * 3 + 1;
-      final endMonth = startMonth + 2;
-      return data=_orders1
-          .where((e) =>
-              e.dateTime.year == year &&
-              e.dateTime.month >= startMonth &&
-              e.dateTime.month <= endMonth)
-          .toList();
+    var year = 2024;
+    final startMonth = (quater - 1) * 3 + 1;
+    final endMonth = startMonth + 2;
+    return data = _orders1
+        .where((e) =>
+            e.dateTime.year == year &&
+            e.dateTime.month >= startMonth &&
+            e.dateTime.month <= endMonth)
+        .toList();
   }
 
   // List<OrderItem> filterOrder(int quater, int year) {
